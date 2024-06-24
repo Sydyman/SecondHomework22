@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Weather"
+        android:layout_marginStart="40dp"
+        android:textStyle="bold"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="360dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="30dp"
+            android:backgroundTint="@color/blue"
+            app:cardCornerRadius="16dp">
+            <TextView
+                android:layout_marginStart="30dp"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Bishkek"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/weatherTextView"
+                android:text="Loading weather..."
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginTop="30dp"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/white">
+
+            </TextView>
+            <TextView
+                android:id="@+id/timeTextView"
+                android:layout_marginTop="100dp"
+                android:text="Time"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginStart="200dp"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/white"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="360dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginStart="30dp"
+            android:backgroundTint="@color/orange"
+            app:cardCornerRadius="16dp">
+            <TextView
+
+                android:text="Paris"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginStart="30dp"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/white"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="360dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginStart="30dp"
+            android:backgroundTint="@color/pink"
+            app:cardCornerRadius="16dp">
+            <TextView
+
+                android:text="New York"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginStart="30dp"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/white"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
